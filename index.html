@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Zipline Math Problem - Full Set</title>
+  <title>Zipline Math Problems with PDF</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0 auto;
-      max-width: 900px;
+      max-width: 950px;
       padding: 20px;
       background-color: #f9f9f9;
     }
+
     h1, h2 {
       text-align: center;
     }
+
+    .pdf-container {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin: 20px 0;
+      padding: 10px;
+    }
+
     .section {
       background-color: #fff;
       border-radius: 8px;
@@ -21,19 +31,20 @@
       margin: 20px 0;
       box-shadow: 0 0 5px rgba(0,0,0,0.15);
     }
+
+    ol {
+      padding-left: 1rem;
+    }
     .question {
       margin: 15px 0;
     }
-    .answers {
-      margin-top: 10px;
-      padding-top: 10px;
-      border-top: 1px solid #ddd;
-    }
+
     label {
       display: block;
       margin: 5px 0 3px;
       font-weight: bold;
     }
+
     input[type="text"], textarea {
       width: 100%;
       padding: 8px;
@@ -44,7 +55,9 @@
     }
     textarea {
       resize: vertical;
+      min-height: 40px;
     }
+
     button {
       margin: 10px 0;
       padding: 10px 15px;
@@ -58,6 +71,12 @@
     button:hover {
       background-color: #025aa5;
     }
+
+    .answers {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+    }
     .correct {
       color: green;
       font-weight: bold;
@@ -66,57 +85,64 @@
       color: red;
       font-weight: bold;
     }
-    .answer-key {
-      margin: 10px 0;
-      padding: 10px;
-      background: #f7f7f7;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
   </style>
 </head>
 <body>
 
-<h1>Zipline Math Problems</h1>
+<h1>Zipline Math Problems & Figures</h1>
 
-<!-- ================ FIGURE 1 ================ -->
+<!-- 1) PDF EMBED/VIEW -->
+<div class="pdf-container">
+  <h2>View the Figures (PDF)</h2>
+  <p>
+    Below is an embedded PDF with all the figures. 
+    If you cannot see the PDF, please 
+    <a href="4.5_zipline_performance_tasks_answer_key__1_.pdf" target="_blank">click here to open or download it.</a>
+  </p>
+  <iframe
+    src="4.5_zipline_performance_tasks_answer_key__1_.pdf"
+    width="100%"
+    height="600"
+    style="border: none;"
+  >
+  </iframe>
+</div>
+
+<!-- =========== FIGURE 1 =========== -->
 <div class="section" id="figure1">
   <h2>Figure 1</h2>
-  <p>
-    A zipliner is on the top of a 35 ft platform, then rides to a second platform. The bases of the platforms
-    are 45 ft apart, and the cable is 50 ft. Round answers to the nearest thousandth.
-  </p>
+  <p>A zipliner is on top of a 35 ft platform, traveling to a second platform. The bases are 45 ft apart, and the cable is 50 ft. Round answers to the nearest thousandth.</p>
   <ol>
     <li class="question">
       <label>a) How high is the second platform? (ft)</label>
-      <input type="text" id="f1a" placeholder="Enter numeric answer (e.g. 13.206)" />
+      <input type="text" id="f1a" placeholder="e.g. 13.206" />
     </li>
     <li class="question">
-      <label>b) What is the angle of elevation from the top of the ending platform to the top of the starting platform? (°)</label>
-      <input type="text" id="f1b" placeholder="Enter numeric answer (e.g. 25.842)" />
+      <label>b) Angle of elevation from the ending platform to the starting platform? (°)</label>
+      <input type="text" id="f1b" placeholder="e.g. 25.842" />
     </li>
     <li class="question">
-      <label>c) Ways to make the zipline faster without changing the distance between the platforms?</label>
+      <label>c) Ways to make the zipline faster without changing horizontal distance?</label>
       <textarea id="f1c" placeholder="Your ideas..."></textarea>
     </li>
     <li class="question">
-      <label>d) If the cable is now 60 ft (instead of 50) and only the first platform’s height changes, what is the new height? (ft)</label>
-      <input type="text" id="f1d" placeholder="Enter numeric answer (e.g. 52.892)" />
+      <label>d) With a 60 ft cable, only the height of the first platform changes. New height? (ft)</label>
+      <input type="text" id="f1d" placeholder="e.g. 52.892" />
     </li>
   </ol>
   <button onclick="checkFigure1()">Check Answers (Figure 1)</button>
   <div class="answers" id="f1answers"></div>
 </div>
 
-<!-- ================ FIGURE 2 ================ -->
+<!-- =========== FIGURE 2 =========== -->
 <div class="section" id="figure2">
   <h2>Figure 2</h2>
   <p>
-    The starting tree is 40 ft high, the zip line is 50 ft, and the trees are 32 ft apart. Round answers to the nearest thousandth.
+    The starting tree is 40 ft, the zipline is 50 ft, and the trees are 32 ft apart. Round answers to the nearest thousandth.
   </p>
   <ol>
     <li class="question">
-      <label>a) What is the vertical distance dropped? (ft)</label>
+      <label>a) Vertical distance dropped? (ft)</label>
       <input type="text" id="f2a" placeholder="e.g. 38.419" />
     </li>
     <li class="question">
@@ -124,15 +150,15 @@
       <input type="text" id="f2b" placeholder="e.g. 1.581" />
     </li>
     <li class="question">
-      <label>c) Is this reasonable? Why or why not?</label>
-      <textarea id="f2c"></textarea>
+      <label>c) Is this distance reasonable? Why or why not?</label>
+      <textarea id="f2c" placeholder="Explanation..."></textarea>
     </li>
     <li class="question">
-      <label>d) If we decrease the cable by 5 ft (so 45 ft total), does that fix the issue and what is the new height? (ft)</label>
+      <label>d) If we shorten the cable to 45 ft, does it fix the issue? What is the new height? (ft)</label>
       <input type="text" id="f2d" placeholder="e.g. 8.361" />
     </li>
     <li class="question">
-      <label>e) If traveling at ~5 ft/sec with the new cable length, how long does it take? (sec)</label>
+      <label>e) If traveling ~5 ft/sec with the new 45 ft cable, how long is the ride? (sec)</label>
       <input type="text" id="f2e" placeholder="e.g. 9" />
     </li>
   </ol>
@@ -140,20 +166,19 @@
   <div class="answers" id="f2answers"></div>
 </div>
 
-<!-- ================ FIGURE 3 (Part 1) ================ -->
-<div class="section" id="figure3a">
+<!-- =========== FIGURE 3 (PART 1) =========== -->
+<div class="section" id="figure3p1">
   <h2>Figure 3 (Part 1)</h2>
   <p>
-    Distance between trees is 50 ft, starting height 40 ft, ending height 10 ft, so total drop is 30 ft.
-    Round answers to the nearest thousandth.
+    Distance between trees: 50 ft; Start: 40 ft high; End: 10 ft high; Drop: 30 ft. Round answers to the nearest thousandth.
   </p>
   <ol>
     <li class="question">
-      <label>a) Length of the zip line? (ft)</label>
+      <label>a) Length of the zipline? (ft)</label>
       <input type="text" id="f3a" placeholder="e.g. 58.310" />
     </li>
     <li class="question">
-      <label>b) Location of the brake (2/3 down the cable)? (ft from start)</label>
+      <label>b) Brake location if 2/3 down the cable? (ft from start)</label>
       <input type="text" id="f3b" placeholder="e.g. 38.873" />
     </li>
     <li class="question">
@@ -161,121 +186,102 @@
       <input type="text" id="f3c" placeholder="e.g. 19.437" />
     </li>
     <li class="question">
-      <label>d) If the bungee anchor is halfway between the trees, maximum bungee length to end exactly at the end of zip line? (ft)</label>
+      <label>d) Bungee anchor halfway between trees. Max length if it ends exactly at zip line end? (ft)</label>
       <input type="text" id="f3d" placeholder="e.g. 26.926" />
     </li>
     <li class="question">
-      <label>e) If weight:stretch ratio is 15:2, what is the maximum weight? (lbs)</label>
+      <label>e) If weight:stretch = 15:2, what is the max weight? (lbs)</label>
       <input type="text" id="f3e" placeholder="e.g. 201.944" />
     </li>
   </ol>
-  <button onclick="checkFigure3Part1()">Check Answers (Figure 3 Part 1)</button>
+  <button onclick="checkFigure3Part1()">Check Answers (Fig 3 Pt 1)</button>
   <div class="answers" id="f3answers1"></div>
 </div>
 
-<!-- ================ FIGURE 3 (Part 2) ================ -->
-<div class="section" id="figure3b">
+<!-- =========== FIGURE 3 (PART 2) =========== -->
+<div class="section" id="figure3p2">
   <h2>Figure 3 (Part 2)</h2>
   <p>
-    Now consider a scenario with 100 ft, or extended distances. Round answers to the nearest thousandth.
+    Consider a longer scenario (100 ft, or other extended distances). Round answers to the nearest thousandth.
   </p>
   <ol>
     <li class="question">
-      <label>f) Find the vertical distance traveled? (ft)</label>
+      <label>f) Vertical distance traveled? (ft)</label>
       <input type="text" id="f3f" placeholder="e.g. 57.358" />
     </li>
     <li class="question">
-      <label>g) Find the horizontal distance traveled? (ft)</label>
+      <label>g) Horizontal distance traveled? (ft)</label>
       <input type="text" id="f3g" placeholder="e.g. 81.915" />
     </li>
     <li class="question">
-      <label>h) If the end must be at least 7 ft off the ground, what's the starting height? (ft)</label>
+      <label>h) If the end must be at least 7 ft off ground, what's the start height? (ft)</label>
       <input type="text" id="f3h" placeholder="e.g. 64.358" />
     </li>
     <li class="question">
-      <label>i) If the rider does it in 6 seconds, find the vertical, horizontal, and diagonal velocities? (ft/sec)</label>
+      <label>i) If the rider does the zip line in 6 s, what are vertical, horizontal & diagonal velocities? (ft/s)</label>
       <input type="text" id="f3i" placeholder="e.g. 9.560, 13.653, 16.667" />
     </li>
   </ol>
-  <button onclick="checkFigure3Part2()">Check Answers (Figure 3 Part 2)</button>
+  <button onclick="checkFigure3Part2()">Check Answers (Fig 3 Pt 2)</button>
   <div class="answers" id="f3answers2"></div>
 </div>
 
-<!-- ================ FIGURE 3 (Part 3) ================ -->
-<div class="section" id="figure3c">
+<!-- =========== FIGURE 3 (PART 3) =========== -->
+<div class="section" id="figure3p3">
   <h2>Figure 3 (Part 3)</h2>
   <p>
-    Additional scenario with ratio & anchor constraints, angles, lengths, etc. Round answers to the nearest thousandth.
+    Further scenario with ratio constraints, angles, cable lengths, etc. Round answers to the nearest thousandth.
   </p>
   <ol>
     <li class="question">
-      <label>i) If weight:stretch is 15:2 for max 200 lbs, what's the maximum stretch? (ft)</label>
+      <label>i) If weight:stretch = 15:2 for max 200 lbs, what's the max stretch? (ft)</label>
       <input type="text" id="f3i2" placeholder="e.g. 26.667" />
     </li>
     <li class="question">
-      <label>j (i). Anchor to stopping point? (ft)</label>
+      <label>j(i) Anchor to stopping point? (ft)</label>
       <input type="text" id="f3j1" placeholder="e.g. 24.721" />
     </li>
     <li class="question">
-      <label>j (ii). Anchor to the tree? (ft)</label>
+      <label>j(ii) Anchor to the tree? (ft)</label>
       <input type="text" id="f3j2" placeholder="e.g. 26.721" />
     </li>
     <li class="question">
-      <label>j (iii). Distance between the two trees? (ft)</label>
+      <label>j(iii) Distance between the two trees? (ft)</label>
       <input type="text" id="f3j3" placeholder="e.g. 53.442" />
     </li>
     <li class="question">
-      <label>k) If angle of elevation is 15°, how much vertical drop? (ft)</label>
+      <label>k) With angle of elevation 15°, how much vertical drop? (ft)</label>
       <input type="text" id="f3k" placeholder="e.g. 14.320" />
     </li>
     <li class="question">
-      <label>l) What is the starting height off the ground? (ft)</label>
+      <label>l) Height off ground of the start? (ft)</label>
       <input type="text" id="f3l" placeholder="e.g. 24.320" />
     </li>
     <li class="question">
-      <label>m) Find the length of the zip line? (ft)</label>
+      <label>m) Length of the zip line? (ft)</label>
       <input type="text" id="f3m" placeholder="e.g. 55.328" />
     </li>
     <li class="question">
-      <label>n) If the brake is 2/3 down the cable, how far from the start is that? (ft)</label>
+      <label>n) If brake is 2/3 down cable, how far from start? (ft)</label>
       <input type="text" id="f3n" placeholder="e.g. 36.883" />
     </li>
     <li class="question">
-      <label>o) What is the slope (steepness) of the brake bungee cord? </label>
+      <label>o) Slope (steepness) of the brake bungee cord?</label>
       <input type="text" id="f3o" placeholder="e.g. 0.405" />
     </li>
     <li class="question">
-      <label>p) If the rider takes 8 seconds, what's the average velocity? (ft/sec)</label>
+      <label>p) If rider takes 8 s, what's the average velocity? (ft/s)</label>
       <input type="text" id="f3p" placeholder="e.g. 6.666" />
     </li>
   </ol>
-  <button onclick="checkFigure3Part3()">Check Answers (Figure 3 Part 3)</button>
+  <button onclick="checkFigure3Part3()">Check Answers (Fig 3 Pt 3)</button>
   <div class="answers" id="f3answers3"></div>
 </div>
 
 <script>
-/**
- * Utility: Check numeric answers with a tolerance for rounding.
- * If a question has multiple numeric parts (like x,y,z in one answer), we do a split check.
- */
-function checkNumericAnswer(userVal, correctVal, tolerance = 0.01) {
-  // We allow for either a single numeric or multiple comma-separated values.
-  const userParts = userVal.split(",").map(v => v.trim());
-  const correctParts = Array.isArray(correctVal) ? correctVal : [correctVal];
+/* ========== OFFICIAL ANSWER KEYS ========== */
 
-  if (userParts.length !== correctParts.length) {
-    return false;
-  }
-
-  for (let i = 0; i < userParts.length; i++) {
-    const num = parseFloat(userParts[i]);
-    if (isNaN(num)) return false;
-    if (Math.abs(num - correctParts[i]) > tolerance) return false;
-  }
-  return true;
-}
-
-// Figure 1 official answers
+// Figure 1
 const figure1Answers = {
   a: 13.206,
   b: 25.842,
@@ -283,13 +289,13 @@ const figure1Answers = {
   d: 52.892
 };
 
-// Figure 2 official answers
+// Figure 2
 const figure2Answers = {
   a: 38.419,
   b: 1.581,
-  c: "No, it's not high enough. People will drag their feet.",
-  d: 8.361, // plus the explanation "Yes, it fixes the issue..."
-  e: 9
+  c: "No, it’s not high enough. People will drag their feet.",
+  d: 8.361, // new height if cable is 45 ft
+  e: 9      // time in seconds at 5 ft/sec
 };
 
 // Figure 3 (Part 1)
@@ -306,7 +312,7 @@ const figure3Part2 = {
   f: 57.358,
   g: 81.915,
   h: 64.358,
-  // i has 3 velocity components: vertical, horizontal, diagonal
+  // velocity is a triple: vertical, horizontal, diagonal
   i: [9.560, 13.653, 16.667]
 };
 
@@ -324,103 +330,122 @@ const figure3Part3 = {
   p: 6.666
 };
 
-// ======= FIGURE 1 CHECK =======
+/* ========== UTILITY: CHECK NUMERIC ANSWERS ========== 
+   Allows for single or multiple numeric values (comma-separated) */
+function checkNumericAnswer(userVal, correctVal, tolerance = 0.01) {
+  // Convert user string -> array if multiple values.
+  const userParts = userVal.split(",").map(v => v.trim());
+  // Ensure correctVal is array if we expect multiple values.
+  const correctParts = Array.isArray(correctVal) ? correctVal : [correctVal];
+
+  // If lengths differ, automatic fail.
+  if (userParts.length !== correctParts.length) {
+    return false;
+  }
+
+  for (let i = 0; i < userParts.length; i++) {
+    const num = parseFloat(userParts[i]);
+    if (isNaN(num)) return false;
+    if (Math.abs(num - correctParts[i]) > tolerance) return false;
+  }
+  return true;
+}
+
+/* ========== FIGURE 1 CHECK ========== */
 function checkFigure1() {
   const aVal = document.getElementById("f1a").value.trim();
   const bVal = document.getElementById("f1b").value.trim();
-  const cVal = document.getElementById("f1c").value.trim().toLowerCase();
+  const cVal = document.getElementById("f1c").value.trim();
   const dVal = document.getElementById("f1d").value.trim();
 
-  let feedback = "";
+  let fb = "";
 
   // a
-  feedback += "<p><strong>a)</strong> Your answer: " + aVal + " ";
+  fb += "<p><strong>a)</strong> " + aVal + " → ";
   if (checkNumericAnswer(aVal, figure1Answers.a)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure1Answers.a + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure1Answers.a})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // b
-  feedback += "<p><strong>b)</strong> Your answer: " + bVal + " ";
+  fb += "<p><strong>b)</strong> " + bVal + " → ";
   if (checkNumericAnswer(bVal, figure1Answers.b)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure1Answers.b + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure1Answers.b})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  // c (conceptual, we'll just display official answer)
-  feedback += "<p><strong>c)</strong> Your answer: " + cVal + "<br />";
-  feedback += "Official answer: " + figure1Answers.c + "</p>";
+  // c (conceptual, no numeric check)
+  fb += `<p><strong>c)</strong> You said: "${cVal}"<br/>Official: ${figure1Answers.c}</p>`;
 
   // d
-  feedback += "<p><strong>d)</strong> Your answer: " + dVal + " ";
+  fb += "<p><strong>d)</strong> " + dVal + " → ";
   if (checkNumericAnswer(dVal, figure1Answers.d)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure1Answers.d + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure1Answers.d})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  document.getElementById("f1answers").innerHTML = feedback;
+  document.getElementById("f1answers").innerHTML = fb;
 }
 
-// ======= FIGURE 2 CHECK =======
+/* ========== FIGURE 2 CHECK ========== */
 function checkFigure2() {
   const aVal = document.getElementById("f2a").value.trim();
   const bVal = document.getElementById("f2b").value.trim();
-  const cVal = document.getElementById("f2c").value.trim().toLowerCase();
+  const cVal = document.getElementById("f2c").value.trim();
   const dVal = document.getElementById("f2d").value.trim();
   const eVal = document.getElementById("f2e").value.trim();
 
-  let feedback = "";
+  let fb = "";
 
   // a
-  feedback += "<p><strong>a)</strong> Your answer: " + aVal + " ";
+  fb += "<p><strong>a)</strong> " + aVal + " → ";
   if (checkNumericAnswer(aVal, figure2Answers.a)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure2Answers.a + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure2Answers.a})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // b
-  feedback += "<p><strong>b)</strong> Your answer: " + bVal + " ";
+  fb += "<p><strong>b)</strong> " + bVal + " → ";
   if (checkNumericAnswer(bVal, figure2Answers.b)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure2Answers.b + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure2Answers.b})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // c (conceptual)
-  feedback += "<p><strong>c)</strong> Your response: " + cVal + "<br />";
-  feedback += "Official: " + figure2Answers.c + "</p>";
+  fb += `<p><strong>c)</strong> You said: "${cVal}"<br/>Official: ${figure2Answers.c}</p>`;
 
   // d
-  feedback += "<p><strong>d)</strong> Your answer: " + dVal + " ";
+  fb += "<p><strong>d)</strong> " + dVal + " → ";
   if (checkNumericAnswer(dVal, figure2Answers.d)) {
-    feedback += '<span class="correct">Correct!</span> (Yes, it fixes the issue)';
+    fb += '<span class="correct">Correct!</span> (Yes, it fixes the issue.)';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure2Answers.d + ' ft)';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure2Answers.d})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // e
-  feedback += "<p><strong>e)</strong> Your answer: " + eVal + " ";
+  fb += "<p><strong>e)</strong> " + eVal + " → ";
   if (checkNumericAnswer(eVal, figure2Answers.e)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure2Answers.e + ' seconds)';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure2Answers.e} sec)`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  document.getElementById("f2answers").innerHTML = feedback;
+  document.getElementById("f2answers").innerHTML = fb;
 }
 
-// ======= FIGURE 3 PART 1 CHECK =======
+/* ========== FIGURE 3 PART 1 CHECK ========== */
 function checkFigure3Part1() {
   const aVal = document.getElementById("f3a").value.trim();
   const bVal = document.getElementById("f3b").value.trim();
@@ -428,212 +453,211 @@ function checkFigure3Part1() {
   const dVal = document.getElementById("f3d").value.trim();
   const eVal = document.getElementById("f3e").value.trim();
 
-  let feedback = "";
+  let fb = "";
 
   // a
-  feedback += "<p><strong>a)</strong> Your answer: " + aVal + " ";
+  fb += "<p><strong>a)</strong> " + aVal + " → ";
   if (checkNumericAnswer(aVal, figure3Part1.a)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part1.a + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part1.a})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // b
-  feedback += "<p><strong>b)</strong> Your answer: " + bVal + " ";
+  fb += "<p><strong>b)</strong> " + bVal + " → ";
   if (checkNumericAnswer(bVal, figure3Part1.b)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part1.b + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part1.b})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // c
-  feedback += "<p><strong>c)</strong> Your answer: " + cVal + " ";
+  fb += "<p><strong>c)</strong> " + cVal + " → ";
   if (checkNumericAnswer(cVal, figure3Part1.c)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part1.c + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part1.c})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // d
-  feedback += "<p><strong>d)</strong> Your answer: " + dVal + " ";
+  fb += "<p><strong>d)</strong> " + dVal + " → ";
   if (checkNumericAnswer(dVal, figure3Part1.d)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part1.d + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part1.d})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // e
-  feedback += "<p><strong>e)</strong> Your answer: " + eVal + " ";
+  fb += "<p><strong>e)</strong> " + eVal + " → ";
   if (checkNumericAnswer(eVal, figure3Part1.e)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part1.e + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part1.e})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  document.getElementById("f3answers1").innerHTML = feedback;
+  document.getElementById("f3answers1").innerHTML = fb;
 }
 
-// ======= FIGURE 3 PART 2 CHECK =======
+/* ========== FIGURE 3 PART 2 CHECK ========== */
 function checkFigure3Part2() {
   const fVal = document.getElementById("f3f").value.trim();
   const gVal = document.getElementById("f3g").value.trim();
   const hVal = document.getElementById("f3h").value.trim();
-  const iVal = document.getElementById("f3i").value.trim(); // multiple values
+  const iVal = document.getElementById("f3i").value.trim();
 
-  let feedback = "";
+  let fb = "";
 
   // f
-  feedback += "<p><strong>f)</strong> Your answer: " + fVal + " ";
+  fb += "<p><strong>f)</strong> " + fVal + " → ";
   if (checkNumericAnswer(fVal, figure3Part2.f)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part2.f + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part2.f})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // g
-  feedback += "<p><strong>g)</strong> Your answer: " + gVal + " ";
+  fb += "<p><strong>g)</strong> " + gVal + " → ";
   if (checkNumericAnswer(gVal, figure3Part2.g)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part2.g + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part2.g})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // h
-  feedback += "<p><strong>h)</strong> Your answer: " + hVal + " ";
+  fb += "<p><strong>h)</strong> " + hVal + " → ";
   if (checkNumericAnswer(hVal, figure3Part2.h)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part2.h + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part2.h})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  // i (multiple numeric answers in one line)
-  feedback += "<p><strong>i)</strong> Your answer: " + iVal + " ";
+  // i (multiple numeric: vertical, horizontal, diagonal)
+  fb += "<p><strong>i)</strong> " + iVal + " → ";
   if (checkNumericAnswer(iVal, figure3Part2.i)) {
-    feedback += '<span class="correct">Correct!</span> (vertical, horizontal, diagonal)';
+    fb += '<span class="correct">Correct!</span> (v,h,d)';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part2.i.join(", ") + ' ft/sec)';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part2.i.join(", ")})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  document.getElementById("f3answers2").innerHTML = feedback;
+  document.getElementById("f3answers2").innerHTML = fb;
 }
 
-// ======= FIGURE 3 PART 3 CHECK =======
+/* ========== FIGURE 3 PART 3 CHECK ========== */
 function checkFigure3Part3() {
-  const i2Val  = document.getElementById("f3i2").value.trim();
-  const j1Val  = document.getElementById("f3j1").value.trim();
-  const j2Val  = document.getElementById("f3j2").value.trim();
-  const j3Val  = document.getElementById("f3j3").value.trim();
-  const kVal   = document.getElementById("f3k").value.trim();
-  const lVal   = document.getElementById("f3l").value.trim();
-  const mVal   = document.getElementById("f3m").value.trim();
-  const nVal   = document.getElementById("f3n").value.trim();
-  const oVal   = document.getElementById("f3o").value.trim();
-  const pVal   = document.getElementById("f3p").value.trim();
+  const i2Val = document.getElementById("f3i2").value.trim();
+  const j1Val = document.getElementById("f3j1").value.trim();
+  const j2Val = document.getElementById("f3j2").value.trim();
+  const j3Val = document.getElementById("f3j3").value.trim();
+  const kVal  = document.getElementById("f3k").value.trim();
+  const lVal  = document.getElementById("f3l").value.trim();
+  const mVal  = document.getElementById("f3m").value.trim();
+  const nVal  = document.getElementById("f3n").value.trim();
+  const oVal  = document.getElementById("f3o").value.trim();
+  const pVal  = document.getElementById("f3p").value.trim();
 
-  let feedback = "";
+  let fb = "";
 
   // i2
-  feedback += "<p><strong>i)</strong> Your answer: " + i2Val + " ";
+  fb += "<p><strong>i)</strong> " + i2Val + " → ";
   if (checkNumericAnswer(i2Val, figure3Part3.i2)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.i2 + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.i2})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // j1
-  feedback += "<p><strong>j(i)</strong> Your answer: " + j1Val + " ";
+  fb += "<p><strong>j(i)</strong> " + j1Val + " → ";
   if (checkNumericAnswer(j1Val, figure3Part3.j1)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.j1 + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.j1})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // j2
-  feedback += "<p><strong>j(ii)</strong> Your answer: " + j2Val + " ";
+  fb += "<p><strong>j(ii)</strong> " + j2Val + " → ";
   if (checkNumericAnswer(j2Val, figure3Part3.j2)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.j2 + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.j2})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // j3
-  feedback += "<p><strong>j(iii)</strong> Your answer: " + j3Val + " ";
+  fb += "<p><strong>j(iii)</strong> " + j3Val + " → ";
   if (checkNumericAnswer(j3Val, figure3Part3.j3)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.j3 + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.j3})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // k
-  feedback += "<p><strong>k)</strong> Your answer: " + kVal + " ";
+  fb += "<p><strong>k)</strong> " + kVal + " → ";
   if (checkNumericAnswer(kVal, figure3Part3.k)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.k + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.k})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // l
-  feedback += "<p><strong>l)</strong> Your answer: " + lVal + " ";
+  fb += "<p><strong>l)</strong> " + lVal + " → ";
   if (checkNumericAnswer(lVal, figure3Part3.l)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.l + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.l})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // m
-  feedback += "<p><strong>m)</strong> Your answer: " + mVal + " ";
+  fb += "<p><strong>m)</strong> " + mVal + " → ";
   if (checkNumericAnswer(mVal, figure3Part3.m)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.m + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.m})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // n
-  feedback += "<p><strong>n)</strong> Your answer: " + nVal + " ";
+  fb += "<p><strong>n)</strong> " + nVal + " → ";
   if (checkNumericAnswer(nVal, figure3Part3.n)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.n + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.n})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // o
-  feedback += "<p><strong>o)</strong> Your answer: " + oVal + " ";
+  fb += "<p><strong>o)</strong> " + oVal + " → ";
   if (checkNumericAnswer(oVal, figure3Part3.o, 0.001)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.o + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.o})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
   // p
-  feedback += "<p><strong>p)</strong> Your answer: " + pVal + " ";
+  fb += "<p><strong>p)</strong> " + pVal + " → ";
   if (checkNumericAnswer(pVal, figure3Part3.p)) {
-    feedback += '<span class="correct">Correct!</span>';
+    fb += '<span class="correct">Correct!</span>';
   } else {
-    feedback += '<span class="incorrect">Incorrect.</span> (Correct: ' + figure3Part3.p + ')';
+    fb += `<span class="incorrect">Incorrect.</span> (Correct: ${figure3Part3.p})`;
   }
-  feedback += "</p>";
+  fb += "</p>";
 
-  document.getElementById("f3answers3").innerHTML = feedback;
+  document.getElementById("f3answers3").innerHTML = fb;
 }
 </script>
-
 </body>
 </html>
